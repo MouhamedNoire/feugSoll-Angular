@@ -1,0 +1,22 @@
+<article class="listing">
+  <div class="image-parent">
+    <img class="product-image" src={{chaussure.image}} />
+  </div>
+  <section class="details">
+    <p class="title">{{chaussure.nom}} </p>
+    <hr />
+    <p class="detail">
+      <span>Marque</span>
+      <span>{{chaussure.marque}}</span>
+    </p>
+    <p class="detail">
+      <span>Sport</span>
+      <span>{{chaussure.type}}</span>
+    </p>
+    <p class="detail">
+      <span>Price</span>
+      <span>{{chaussure.prix}}</span>
+    </p>
+  </section>
+  <button mat-flat-button color="primary" [routerLink]="['product-detail',chaussure.id]">voir</button>
+</article>
